@@ -1,0 +1,81 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #ffe4e1;
+    color: #ff69b4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+    border-bottom: 5px solid #ff69b4;
+}
+
+h1 {
+    font-size: 2.5em;
+    background-color: #ffe4e1; /* Light pink background */
+    color: #ff69b4; /* White text color */
+    padding: 10px 20px; /* Space inside the background */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Shrink background to fit text */
+}
+
+p {
+    font-size: 1.2em;
+    background-color: #ffe4e1; /* A slightly different shade of pink */
+    color: #ff69b4; /* Dark text color for readability */
+    padding: 10px 15px; /* Space inside the background */
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Shrink background to fit text */
+    margin: 10px 0; /* Space above and below paragraphs */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.character {
+    margin: 10px;
+    width: 200px;
+}
+
+.character img {
+    width: 100%;
+    border: 5px solid #ff69b4;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.info {
+    display: none;
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #ff69b4;
+    margin-top: 10px;
+}
+
+.info h2 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #ffb6c1;
+    background-image: url('flowers3.jpeg'); /* Background image for the footer */
+    margin-top: 20px;
+    background-size: cover; /* Cover the entire footer area */
+    background-position: center, bottom; /* Center the image */
+    padding: 15px 15px; 
+    border-top: 5px solid #ff69b4;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}

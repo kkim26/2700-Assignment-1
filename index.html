@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio Characters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Sanrio World!</h1>
+        <p>Click on your favorite character to learn more!</p>
+    </header>
+    
+    <main>
+        <div class="gallery">
+            <div class="character">
+                <img src="helloKitty.png" alt="Hello Kitty" onclick="toggleInfo('helloKitty')">
+                <div id="helloKitty" class="info">
+                    <h2>Hello Kitty</h2>
+                    <p>Hello Kitty is a cheerful and kind-hearted girl who loves to bake cookies and play the piano. She was born on November 1st and is close to her twin sister, Mimmy.</p>
+                </div>
+            </div>
+            <div class="character">
+                <img src="myMelody.png" alt="My Melody" onclick="toggleInfo('myMelody')">
+                <div id="myMelody" class="info">
+                    <h2>My Melody</h2>
+                    <p>My Melody is a sweet little girl who wears a hood that her grandmother made. She loves almond pound cake and often hangs out with her best friend, Flat.</p>
+                </div>
+            </div>
+            <div class="character">
+                <img src="cinnamoroll1.jpeg" alt="Cinnamoroll" onclick="toggleInfo('cinnamoroll')">
+                <div id="cinnamoroll" class="info">
+                    <h2>Cinnamoroll</h2>
+                    <p>Cinnamoroll is a shy, white puppy with long ears that let him fly. He was born on March 6th and works as the official mascot of a café.</p>
+                </div>
+            </div>
+            <div class="character">
+                <img src="kuromi.jpeg" alt="Kuromi" onclick="toggleInfo('kuromi')">
+                <div id="kuromi" class="info">
+                    <h2>Kuromi</h2>
+                    <p>Kuromi may look tough, but she has a soft spot for romantic stories. She wears a black jester's hat with a pink skull on it and often gets into mischief.</p>
+                </div>
+            </div>
+            <div class="character">
+                <img src="pompompurin.webp" alt="Pompompurin" onclick="toggleInfo('pompompurin')">
+                <div id="pompompurin" class="info">
+                    <h2>Pompompurin</h2>
+                    <p>Pompompurin is a laid-back golden retriever who loves to collect shoes and spend time with his best friends, Muffin and Scone.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Sanrio World</p>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            // Toggle the display of the selected character's info
+            if (info.style.display === 'block') {
+                info.style.display = 'none';
+            } else {
+                info.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
